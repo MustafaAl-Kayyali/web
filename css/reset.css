@@ -1,0 +1,19 @@
+/* إعادة تعيين الأنماط الافتراضية */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, code, img, small, strong, ul, li, form, label, table, caption,
+tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    
+}
+body {
+    line-height: 1;
+    font-family: Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}

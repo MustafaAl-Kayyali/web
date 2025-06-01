@@ -1,0 +1,109 @@
+.search-container {
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 20px 20px; /* padding أكبر لتوسيع المحتوى داخليًا */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    margin: 3rem auto; /* هامش أكبر لتوسيع المساحة حول الحاوية */
+    width: 95vw;          /* يغطي تقريبًا كامل العرض */
+    max-width: 1600px;    /* حد أقصى لعرض الشاشات الكبيرة */
+    min-height: 250px;    /* يجعل الحاوية أطول */
+    box-sizing: border-box;
+}
+ .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+    .product-item {
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+  .product-item img {
+    width: 220px;          /* العرض ثابت 60 بكسل */
+    height: 120px;         /* الارتفاع ثابت 80 بكسل */
+/*    border-radius: 10px;*/
+    margin-bottom: 15px;
+  }
+
+    .product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+    .product-item p {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+    .product-item .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+    .product-item button {
+    background-color: #0044ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+    .product-item button:hover {
+    background-color: #191df1;
+}
+    .product-item .out-of-stock {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+    .product-item .out-of-stock::before {
+    content: "Out of Stock";
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #ff0000;
+    margin-top: 10px;
+}
+    .product-item .out-of-stock::after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #ff0000;
+    margin-top: 5px;
+}
+    .product-item .out-of-stock {
+    display: none;
+}
+
+    .product-item.out-of-stock .out-of-stock {
+    display: block;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+#sortBy{
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

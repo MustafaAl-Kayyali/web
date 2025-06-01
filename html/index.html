@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/main-pages.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+  <header id="main-header">
+    <nav>
+      <ul>
+        <li><a href="#" class="active"><i class="fas fa-cubes"></i> Prodect</a></li>
+        <li><a href="cart.html"> <i class="fas fa-shopping-cart"></i>Cart</a></li>
+        <li><a href="Login.html" id="authButton"><i class="fas fa-user"></i> <span id="authText">Login</span></a></li>
+      </ul>
+    </nav>
+  </header>
+<main >
+  <div class="search-container">
+    <div class="search-bar">
+      <div class="search-title">Search Products</div>
+      <div class="search-input-container">
+        <input type="search" name="search" id="search" class="search-input" placeholder="Search by product name...">
+        <button id="searchBtn" class="search-button">Search</button>
+      </div>
+      <div class="search-filters">
+        <div class="filter-group">
+          <label for="sortBy">Sort By</label>
+          <select id="sortBy">
+            <option value="name-asc">Name (A-Z)</option>
+            <option value="name-desc">Name (Z-A)</option>
+            <option value="price-asc">Price (Low to High)</option>
+            <option value="price-desc">Price (High to Low)</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-list" id="product-list"></div>
+
+    </div>
+  </div>
+  
+ </main>
+
+<footer class="site-footer" id="footer">
+            <p>&copy; 2025 MEU Shop. All rights reserved.</p>
+</footer>
+<script src="../Login.js"></script>
+<script src="../js/admin.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/out-stock.js"></script>
+</body>
+</html>
